@@ -1,0 +1,62 @@
+h1, h2, h3, h4, h5, p, caption, a {
+    margin: 0;
+    color: white;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 10px;
+    font-size: 160px;
+    margin: 0;
+    @media only screen and (max-width: 450px) {
+      font-size: 48px;
+    }
+  }
+
+  h2 {
+      font-size: 80px;
+      @media only screen and (max-width: 450px) {
+        font-size: 32px;
+      }
+  }
+
+  h3 {
+    font-size: 48px;
+  }
+
+  h4 {
+      font-size: 40px;
+      @media only screen and (max-width: 450px) {
+        font-size: 24px;
+      }
+  }
+  
+  h5 {
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 800;
+  }
+
+  a {
+    font-weight: 800;
+    width: auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 8px 0;
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 800;
+    margin: 8px 0;
+    line-height: 20px;
+    @media only screen and (max-width: 450px) {
+      font-size: 14px;
+    }
+  }
+
+  caption {
+    font-size: 12px;
+  }
