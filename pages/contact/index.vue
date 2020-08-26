@@ -14,8 +14,8 @@
                 </a>
             </div>
             <div class="social-media">
-                <li><a href="https://instagram.com/sinnarnfilms/">Instagram</a></li>
-                <li><a href="https://pro.imdb.com/name/nm8879254?ref_=hm_prof_name">IMDB</a></li>
+                <li><a href="https://instagram.com/sinnarnfilms/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.imdb.com/title/tt10544116/?ref_=nm_knf_i1" target="_blank">IMDB</a></li>
             </div>
             <div class="location">
                 <caption>

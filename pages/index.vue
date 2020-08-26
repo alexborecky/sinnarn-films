@@ -70,7 +70,7 @@ export default Vue.extend({
       hooperSettings: {
         itemsToShow: 1,
         centerMode: true,
-        infiniteScroll: true,
+        infiniteScroll: false,
         transition: 800,
         wheelControl: false,
         autoPlay: false,
@@ -87,7 +87,6 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-
 
 .intro {
   width: 100%;
