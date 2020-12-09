@@ -13,6 +13,7 @@
             url="https://www.youtube.com/watch?v=2SLWaDSLb_4"
           />
         </slide>
+        <!-- <hooper-navigation slot="hooper-addons"></hooper-navigation> -->
         <!-- <slide>
           <testComponent
             filmThumbnail="https://sinnarnfilms.com/img/origin/origin-image.png "
@@ -55,7 +56,7 @@ import Vue from 'vue'
 import { 
     Hooper, 
     Slide,
-    Pagination as HooperPagination
+    Navigation as HooperNavigation
 } from 'hooper'
 import 'hooper/dist/hooper.css'
 
@@ -63,7 +64,7 @@ export default Vue.extend({
   components: {
         Hooper,
         Slide,
-        HooperPagination,
+        HooperNavigation,
   },
   data () {
     return {

@@ -55,8 +55,8 @@ export default {
         }
     }
     .container {
-        width: 90%;
-        height: 70vh;
+        width: 100%;
+        height: 100vh;
         z-index: 100;
         background-size: cover;
         background-position: center;
