@@ -76,7 +76,7 @@ export default Vue.extend({
         wheelControl: false,
         autoPlay: false,
       },
-      filmNameOne: 'Origin',
+      filmNameOne: 'Origin film',
       filmDescriptionOne: 'A short film by Alexandr Borecky',
       textPath: '',
       textButtonTitle: 'Coming soon',
