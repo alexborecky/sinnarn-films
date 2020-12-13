@@ -3,14 +3,12 @@
       <hooper :settings="hooperSettings">
         <slide>
           <filmPreview
-            filmThumbnail="https://sinnarnfilms.com/img/origin/origin-image.jpg"
-            filmBackground="https://sinnarnfilms.com/img/origin/origin-image.jpg"
+            filmThumbnail="https://ik.imagekit.io/alexborecky/Films/origin-image_y0KYR2FkJibY.jpg"
             :filmName="filmNameOne"
             :filmDescription="filmDescriptionOne"
             :textPath="textPath"
             :textButtonTitle="textButtonTitle"
             :externalButtonTitle="linkTitle"
-            url="https://www.youtube.com/watch?v=2SLWaDSLb_4"
           />
         </slide>
         <!-- <hooper-navigation slot="hooper-addons"></hooper-navigation> -->

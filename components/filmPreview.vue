@@ -1,8 +1,5 @@
 <template>
     <div class="hero">
-        <div class="background" :style="{backgroundImage: 'url(' + filmBackground + ')'}">
-            <div class="cover"></div>
-        </div>
         <div class="container flex-center" :style="{backgroundImage: 'url(' + filmThumbnail + ')'}">
             <div class="content flex-center">
                 <h1>{{filmName}}</h1>
