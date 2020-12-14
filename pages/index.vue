@@ -9,22 +9,21 @@
             :textPath="textPath"
             :textButtonTitle="textButtonTitle"
             :externalButtonTitle="linkTitle"
+            url="https://youtu.be/2SLWaDSLb_4"
           />
         </slide>
-        <!-- <hooper-navigation slot="hooper-addons"></hooper-navigation> -->
-        <!-- <slide>
-          <testComponent
-            filmThumbnail="https://sinnarnfilms.com/img/origin/origin-image.png "
-            filmBackground="https://sinnarnfilms.com/img/origin/origin-image.png"
-            :filmName="filmNameOne"
-            :filmDescription="filmDescriptionOne"
+        <slide>
+          <filmPreview
+            class="tdom no-button"
+            filmThumbnail=""
+            filmName="The Deportation of Miseries"
+            filmDescription="A film by Alexandr Borecky"
             :textPath="textPath"
-            :textButtonTitle="textButtonTitle"
+            textButtonTitle="Pre-production"
             :externalButtonTitle="linkTitle"
-            url="https://www.youtube.com/watch?v=2SLWaDSLb_4"
-            :videoSrc="source"
           />
-        </slide> -->
+        </slide>
+        <hooper-navigation slot="hooper-addons"></hooper-navigation>
         <!-- <slide> 
           <filmPreview
             filmThumbnail="https://sinnarnfilms.com/img/origin/origin-image.png"
@@ -69,7 +68,7 @@ export default Vue.extend({
       hooperSettings: {
         itemsToShow: 1,
         centerMode: true,
-        infiniteScroll: false,
+        infiniteScroll: true,
         transition: 800,
         wheelControl: false,
         autoPlay: false,

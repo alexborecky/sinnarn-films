@@ -1,6 +1,6 @@
 <template>
-    <a :href="url" target="_blank">
-        <div class="external-button flex-center">
+    <a :href="url" target="_blank" class="external-button">
+        <div class="flex-center">
             <p>{{externalButtonTitle}}</p>
             <div class="underline"></div>
         </div>
@@ -18,9 +18,9 @@ export default {
 
 <style lang="scss" scoped>
 
-a {
-    text-decoration: none;
+
     .external-button {
+        text-decoration: none;
         .underline {
             width: 100%;
             height: 2px;
@@ -38,6 +38,6 @@ a {
             }
         }
     }
-}
+
 
 </style>

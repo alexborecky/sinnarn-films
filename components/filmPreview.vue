@@ -79,5 +79,29 @@ export default {
         }
     }
 }
+
+.tdom {
+    background: radial-gradient(
+      90% 64% at bottom,
+      #12374A, #000
+    );
+    h1 {
+        font-weight: 400 ;
+        letter-spacing: 20px !important;
+        font-size: 32px;
+        margin: 40px 0;
+    }
+    p {
+        color: #FF5C00 !important;
+        letter-spacing: 8px !important;
+        font-weight: 400 !important;
+    }
+}
+
+.no-button {
+    .external-button {
+        display: none;
+    }
+}
     
 </style>

@@ -1,10 +1,6 @@
 <template>
-    <nuxt-link :to="textPath">
-        <div  class="text-button">
-            <h5>
-                {{textButtonTitle}}
-            </h5>
-        </div>
+    <nuxt-link :to="textPath" class="text-button">
+        {{textButtonTitle}}
     </nuxt-link>
 </template>
 
@@ -19,11 +15,10 @@ export default {
 
 <style lang="scss" scoped>
 
-a {
+.text-button {
     text-decoration: none;
-    p {
-        font-weight: 800;
-    }
+    font-weight: 600;
+    letter-spacing: 4px;
 }
 
 </style>
