@@ -3,7 +3,7 @@
         <div class="container">
             <div class="logo">
                 <nuxt-link to="/">
-                    <img src="@/assets/sinnarnLogo.png" alt="">
+                    <img src="https://ik.imagekit.io/alexborecky/Films/center_iSzZGB91D1aQ.png" alt="">
                 </nuxt-link>
             </div>
             <div>
