@@ -9,8 +9,11 @@ h1 {
     letter-spacing: 10px;
     font-size: 160px;
     margin: 0;
+    @media only screen and (max-width: 960px) {
+      font-size: 88px;
+    }
     @media only screen and (max-width: 450px) {
-      font-size: 48px;
+      font-size: 56px;
     }
   }
 

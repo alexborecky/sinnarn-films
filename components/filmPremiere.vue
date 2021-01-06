@@ -1,19 +1,23 @@
 <template>
     <div class="hero">
         <div class="container flex-center" :style="{backgroundImage: 'url(' + filmThumbnail + ')'}">
-            <div class="content flex-center">
+            <div class="content flex">
+                <div class="names flex">
+                    <p class="yellow">Jiří Skřivánek</p>
+                    <p class="yellow">Alexandr Borecký</p>
+                    <p class="yellow">Lukáš Labuda</p>
+                </div>
+                <div class="titles flex-center">
                 <h1>{{filmName}}</h1>
-                <p>{{filmDescription}}</p>
-            </div>
-            <div class="links flex-center">
-                <textButton id="temporary"
-                    :textPath="textPath"
-                    :textButtonTitle="textButtonTitle"
-                />
-                <externalButton
-                    :url="url"
-                    :externalButtonTitle="externalButtonTitle"
-                />
+                <p class="yellow">{{filmDescription}}</p>
+                <h4>14.01.21</h4>
+                <div class="links flex-center">
+                    <externalButton
+                        :url="url"
+                        :externalButtonTitle="externalButtonTitle"
+                    />
+                </div>
+                </div>
             </div>
         </div>
     </div>
@@ -22,7 +26,7 @@
 
 <script>
 export default {
-    name: 'filmPreview',
+    name: 'filmPremiere',
     props: ['filmThumbnail', 'filmBackground', 'filmName', 'filmDescription', 'textPath', 'textButtonTitle', 'url', 'externalButtonTitle'],
     data () {
         return {
@@ -59,19 +63,51 @@ export default {
         background-position: center;
         text-align: center;
         .content {
+            justify-content: space-between;
+            height: 80%;
+            width: 60%;
+            flex-flow: column;
+            @media only screen and (max-width: 1440px) {
+                width: 70%;
+            }
+            @media only screen and (max-width: 450px) {
+                width: 90%;
+            }
+            .names {
+                width: 100%;
+                justify-content: space-between;
+                p {
+                    font-size: 12px;
+                    margin: 0 8px;
+                }
+            }
             p {
                 text-transform: uppercase;
                 letter-spacing: 4px;
                 font-weight: 800;
+                margin: -24px 0 40px 0;
+                @media only screen and (max-width: 960px) {
+                    margin: 0px 0 40px 0;
+                }
+            }
+            .yellow {
                 color: #FFDD00;
-                margin: 0px 0 40px 0;
+            }
+            h4 {
+                    margin: 24px 0;
+                    font-family: "Poppins";
+                    letter-spacing: 16px;
+                }
+            h1 {
+                letter-spacing: 40px;
+                font-family: "Poppins";
+                text-align: center;
                 @media only screen and (max-width: 450px) {
-                    margin: 24px 0 40px 0;
+                    letter-spacing: 24px;
                 }
             }
         }
         .links {
-
             #temporary {
                 opacity: .2 !important; 
                 cursor: progress;
@@ -90,10 +126,6 @@ export default {
         letter-spacing: 20px !important;
         font-size: 32px;
         margin: 40px 0;
-        @media only screen and (max-width: 600px) {
-            font-size: 20px;
-            letter-spacing: 8px;
-        }
     }
     p {
         color: #FF5C00 !important;

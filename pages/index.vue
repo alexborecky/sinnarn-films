@@ -2,14 +2,14 @@
   <div class="hero">
       <hooper :settings="hooperSettings">
         <slide>
-          <filmPreview
+          <filmPremiere
             filmThumbnail="https://ik.imagekit.io/alexborecky/Films/origin-image_y0KYR2FkJibY.jpg"
             :filmName="filmNameOne"
             :filmDescription="filmDescriptionOne"
             :textPath="textPath"
-            :textButtonTitle="textButtonTitle"
-            :externalButtonTitle="linkTitle"
-            url="https://youtu.be/2SLWaDSLb_4"
+            textButtonTitle="Watch film"
+            externalButtonTitle="Watch film"
+            url="https://www.youtube.com/watch?v=4OWsYdY_jWE&ab_channel=AlexBorecky"
           />
         </slide>
         <slide>
@@ -76,7 +76,7 @@ export default Vue.extend({
       filmNameOne: 'Origin',
       filmDescriptionOne: 'A short film by Alexandr Borecky',
       textPath: '',
-      textButtonTitle: 'Coming soon',
+      textButtonTitle: '14.01.2021',
       linkTitle: 'Watch Promo',
       source: 'https://sinnarnfilms.com/img/video.mp4'
     }

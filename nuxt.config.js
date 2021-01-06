@@ -32,7 +32,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/uiKit.js'
+    '@/plugins/uiKit.js',
+    { src: '~/plugins/fullpage', mode: 'client' }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -44,6 +45,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    'nuxt-fullpage.js',
   ],
   /*
   ** Build configuration
