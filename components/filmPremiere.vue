@@ -102,6 +102,7 @@ export default {
                 letter-spacing: 40px;
                 font-family: "Poppins";
                 text-align: center;
+                font-weight: 700;
                 @media only screen and (max-width: 450px) {
                     letter-spacing: 24px;
                 }
