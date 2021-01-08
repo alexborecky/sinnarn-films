@@ -1,6 +1,6 @@
 <template>
   <div class="hero">
-      <hooper :settings="hooperSettings">
+      <!-- <hooper :settings="hooperSettings">
         <slide>
           <filmPremiere
             filmThumbnail="https://ik.imagekit.io/alexborecky/Films/origin-image_y0KYR2FkJibY.jpg"
@@ -24,27 +24,31 @@
           />
         </slide>
         <hooper-navigation slot="hooper-addons"></hooper-navigation>
-        <!-- <slide> 
-          <filmPreview
-            filmThumbnail="https://sinnarnfilms.com/img/origin/origin-image.png"
-            filmBackground="https://sinnarnfilms.com/img/origin/origin-background.png"
-            :filmName="filmNameOne"
-            :filmDescription="filmDescriptionOne"
-            :textPath="textPath"
-            :textButtonTitle="textButtonTitle"
-          />
-        </slide>
-        <slide> 
-          <filmPreview
-            filmThumbnail="https://sinnarnfilms.com/img/origin/origin-image.png"
-            filmBackground="https://sinnarnfilms.com/img/origin/origin-background.png"
-            :filmName="filmNameOne"
-            :filmDescription="filmDescriptionOne"
-            :textPath="textPath"
-            :textButtonTitle="textButtonTitle"
-          />
-        </slide> -->
-      </hooper>
+      </hooper> -->
+      <full-page ref="fullpage" :options="options" id="fullpage">
+            <div class="section">
+                <filmPreview
+                    filmThumbnail="https://ik.imagekit.io/alexborecky/Films/origin-image_y0KYR2FkJibY.jpg"
+                    filmName="Origin"
+                    filmDescription="filmDescriptionOne"
+                    textPath="textPath"
+                    textButtonTitle="textButtonTitle"
+                    externalButtonTitle="linkTitle"
+                    url="https://youtu.be/2SLWaDSLb_4"
+                />
+            </div>
+            <div class="section">
+                <filmPreview
+                    class="tdom no-button"
+                    filmThumbnail=""
+                    filmName="The Deportation of Miseries"
+                    filmDescription="A film by Alexandr Borecky"
+                    textPath="textPath"
+                    textButtonTitle="Pre-production"
+                    externalButtonTitle="linkTitle"
+                />
+            </div>
+        </full-page>
   </div>
 </template>
 
