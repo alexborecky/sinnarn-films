@@ -1,30 +1,5 @@
 <template>
   <div class="hero">
-      <!-- <hooper :settings="hooperSettings">
-        <slide>
-          <filmPremiere
-            filmThumbnail="https://ik.imagekit.io/alexborecky/Films/origin-image_y0KYR2FkJibY.jpg"
-            :filmName="filmNameOne"
-            :filmDescription="filmDescriptionOne"
-            :textPath="textPath"
-            textButtonTitle="Watch film"
-            externalButtonTitle="Watch film"
-            url="https://www.youtube.com/watch?v=4OWsYdY_jWE&ab_channel=AlexBorecky"
-          />
-        </slide>
-        <slide>
-          <filmPreview
-            class="tdom no-button"
-            filmThumbnail=""
-            filmName="The Deportation of Miseries"
-            filmDescription="A film by Alexandr Borecky"
-            :textPath="textPath"
-            textButtonTitle="Pre-production"
-            :externalButtonTitle="linkTitle"
-          />
-        </slide>
-        <hooper-navigation slot="hooper-addons"></hooper-navigation>
-      </hooper> -->
       <full-page ref="fullpage" :options="options" id="fullpage">
             <div class="section">
                 <filmPremiere
@@ -35,6 +10,28 @@
                   textButtonTitle="Watch film"
                   externalButtonTitle="Watch film"
                   url="https://www.youtube.com/watch?v=4OWsYdY_jWE&ab_channel=AlexBorecky"
+                />
+            </div>
+            <div class="section">
+                <filmPreview
+                    class="tdom no-button"
+                    filmThumbnail=""
+                    filmName="The Deportation of Miseries"
+                    filmDescription="A film by Alexandr Borecky"
+                    textPath="textPath"
+                    textButtonTitle="Pre-production"
+                    externalButtonTitle="linkTitle"
+                />
+            </div>
+            <div class="section">
+                <filmPreview
+                    class="tdom no-button"
+                    filmThumbnail=""
+                    filmName="The Deportation of Miseries"
+                    filmDescription="A film by Alexandr Borecky"
+                    textPath="textPath"
+                    textButtonTitle="Pre-production"
+                    externalButtonTitle="linkTitle"
                 />
             </div>
             <div class="section">
