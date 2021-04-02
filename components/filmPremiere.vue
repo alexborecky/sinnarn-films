@@ -75,6 +75,10 @@ export default {
             img {
                 max-width: calc(20% - 16px);
                 margin: 16px 16px 0 0;
+                @media only screen and (max-width: 760px) {
+                    max-width: calc(25% - 8px);
+                    margin: 8px 8px 0 0;
+                }
             }
         }
         .content {
@@ -112,7 +116,7 @@ export default {
                 font-weight: 800;
                 margin: -24px 0 40px 0;
                 @media only screen and (max-width: 960px) {
-                    margin: 0px 0 40px 0;
+                    margin: 0px 0 0px 0;
                 }
             }
             .orange {
@@ -125,6 +129,7 @@ export default {
                     @media only screen and (max-width: 760px) {
                         font-size: 24px;
                         letter-spacing: 4px;
+                        margin: 16px 0 0 0;
                     }
                 }
             h1 {
