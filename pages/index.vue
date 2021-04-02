@@ -3,16 +3,28 @@
       <full-page ref="fullpage" :options="options" id="fullpage">
             <div class="section">
                 <filmPremiere
-                  filmThumbnail="https://ik.imagekit.io/alexborecky/Films/origin-image_y0KYR2FkJibY.jpg"
+                  class="origin"
+                  filmThumbnail="https://ik.imagekit.io/alexborecky/Films/empty_06Vxy1Y6H8Ve.jpg"
                   :filmName="filmNameOne"
                   :filmDescription="filmDescriptionOne"
                   :textPath="textPath"
                   textButtonTitle="Watch film"
                   externalButtonTitle="Watch film"
-                  url="https://www.youtube.com/watch?v=4OWsYdY_jWE&ab_channel=AlexBorecky"
+                  url="https://youtu.be/xLExJm6A13A"
                 />
             </div>
             <div class="section">
+                <filmPreview
+                    class="tdom no-button"
+                    filmThumbnail=""
+                    filmName="The Deportation of Miseries"
+                    filmDescription="A film by Alexandr Borecky"
+                    textPath="textPath"
+                    textButtonTitle="Pre-production"
+                    externalButtonTitle="linkTitle"
+                />
+            </div>
+            <!-- <div class="section">
                 <filmPreview
                     class="tdom no-button"
                     filmThumbnail=""
@@ -33,18 +45,7 @@
                     textButtonTitle="Pre-production"
                     externalButtonTitle="linkTitle"
                 />
-            </div>
-            <div class="section">
-                <filmPreview
-                    class="tdom no-button"
-                    filmThumbnail=""
-                    filmName="The Deportation of Miseries"
-                    filmDescription="A film by Alexandr Borecky"
-                    textPath="textPath"
-                    textButtonTitle="Pre-production"
-                    externalButtonTitle="linkTitle"
-                />
-            </div>
+            </div> -->
         </full-page>
   </div>
 </template>

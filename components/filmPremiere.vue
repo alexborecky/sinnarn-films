@@ -1,16 +1,21 @@
 <template>
-    <div class="hero">
-        <div class="container flex-center" :style="{backgroundImage: 'url(' + filmThumbnail + ')'}">
+    <div class="hero" :style="{backgroundImage: 'url(' + filmThumbnail + ')'}">
+        <div class="container flex-center">
             <div class="content flex">
                 <div class="names flex">
-                    <p class="yellow">Jiří Skřivánek</p>
-                    <p class="yellow">Alexandr Borecký</p>
-                    <p class="yellow">Lukáš Labuda</p>
+                    <p class="orange">Jiří Skřivánek</p>
+                    <p class="orange">Alexandr Borecký</p>
+                    <p class="orange">Lukáš Labuda</p>
                 </div>
-                <div class="titles flex-center">
-                <h1>{{filmName}}</h1>
-                <p class="yellow">{{filmDescription}}</p>
-                <h4>14.01.21</h4>
+                <div class="awards">
+                    <img 
+                        v-for="awards in awards" :key="awards.src"
+                        :src="awards.src" alt="">
+                </div>
+                <div class="titles flex">
+                    <h1 class="orange">{{filmName}}</h1>
+                    <p class="orange">{{filmDescription}}</p>
+                    <h4 class="orange">28.01.21</h4>
                 <div class="links flex-center">
                     <externalButton
                         :url="url"
@@ -25,12 +30,14 @@
 
 
 <script>
+import awards from '@/assets/data/awards.js'
 export default {
     name: 'filmPremiere',
     props: ['filmThumbnail', 'filmBackground', 'filmName', 'filmDescription', 'textPath', 'textButtonTitle', 'url', 'externalButtonTitle'],
     data () {
         return {
-            button: 'External URL'
+            button: 'External URL',
+            awards: awards
         }
     }
 }
@@ -40,38 +47,56 @@ export default {
 <style lang="scss" scoped>
 
 .hero {
-    align-items: center;
-    .background {
-        height: 100vh;
-        width: 100vw;
-        position: absolute;
-        filter: blur(24px);
-        background-size: cover;
-        background-position: center;
-        .cover {
-            position: absolute;
-            width: 100vw;
-            height: 100vh;
-            background-color: rgba(black, .9);
-        }
+    background-size: cover;
+    background-position: center;
+    text-align: center; 
+    @media (max-width: 800px) {
+        background-position: 20% center;
     }
+}
+
+.hero {
+    align-items: center;
     .container {
-        width: 100%;
+        width: 80%;
         height: 100vh;
         z-index: 100;
-        background-size: cover;
-        background-position: center;
-        text-align: center;
+        @media only screen and (max-width: 760px) {
+            width: 90%;
+        }
+        .awards {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 80px;
+            @media only screen and (max-width: 760px) {
+                justify-content: center;
+            }
+            img {
+                max-width: calc(20% - 16px);
+                margin: 16px 16px 0 0;
+            }
+        }
         .content {
+            align-self: flex-end;
             justify-content: space-between;
             height: 80%;
-            width: 60%;
+            width: 50%;
             flex-flow: column;
             @media only screen and (max-width: 1440px) {
                 width: 70%;
             }
-            @media only screen and (max-width: 450px) {
-                width: 90%;
+            @media only screen and (max-width: 1000px) {
+                align-self: center;
+                width: 100%;
+            }
+            .titles {
+                flex-flow: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                @media only screen and (max-width: 760px) {
+                    align-items: center;
+                }
             }
             .names {
                 width: 100%;
@@ -90,21 +115,27 @@ export default {
                     margin: 0px 0 40px 0;
                 }
             }
-            .yellow {
-                color: #FFDD00;
+            .orange {
+                color: #f27456;
             }
             h4 {
                     margin: 24px 0;
                     font-family: "Poppins";
-                    letter-spacing: 16px;
+                    letter-spacing: 8px;
+                    @media only screen and (max-width: 760px) {
+                        font-size: 24px;
+                        letter-spacing: 4px;
+                    }
                 }
             h1 {
                 letter-spacing: 40px;
                 font-family: "Poppins";
-                text-align: center;
+                text-align: left;
                 font-weight: 700;
-                @media only screen and (max-width: 450px) {
+                @media only screen and (max-width: 760px) {
                     letter-spacing: 24px;
+                    text-align: center !important;
+                    margin-left: 24px;
                 }
             }
         }
