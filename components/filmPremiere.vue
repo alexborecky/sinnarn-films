@@ -75,6 +75,7 @@ export default {
             img {
                 max-width: calc(20% - 16px);
                 margin: 16px 16px 0 0;
+                height: 100%;
                 @media only screen and (max-width: 760px) {
                     max-width: calc(25% - 8px);
                     margin: 8px 8px 0 0;
