@@ -35,7 +35,7 @@ import primaryButton from './buttons/primaryButton.vue'
 export default {
   components: { primaryButton },
     name: 'filmPremiere',
-    props: ['filmThumbnail', 'filmBackground', 'filmName', 'filmDescription', 'textButtonTitle', 'url', 'title'],
+    props: ['filmThumbnail', 'filmBackground', 'filmName', 'filmDescription', 'url', 'title'],
     data () {
         return {
             button: 'External URL',

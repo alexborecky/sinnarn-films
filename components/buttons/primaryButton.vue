@@ -5,7 +5,7 @@
                 {{title}}
             </p>
             <div class="underline"></div>
-            
+
         </div>
     </nuxt-link>
 </template>
@@ -21,11 +21,8 @@ export default {
 
 <style lang="scss" scoped>
 
-.primary-button {
-    background: none;
-}
-
     .primary-button {
+        background: none;
         text-decoration: none;
         .underline {
             width: 100%;
