@@ -5,11 +5,22 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Sinnarn Films | Independent Production',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
+      { hid: 'description', name: 'description', content: 'Sinnarn Films is an independent film production brand' },
+      { property: 'og:image', content: 'https://ik.imagekit.io/alexborecky/Films/sinnarnogImage_wOIe0pC9r.png' },
+      { property: 'og:type', content: 'website'},
+      { property: 'og:url', content: 'https://sinnarnfilms.com'},
+      { property: 'og:title', content: 'Sinnarn Films | Production' },
+      { property: 'og:description', content: 'Sinnarn Films is an independent film production brand' },
+    ],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { href: "https://fonts.gstatic.com", rel:"preconnect"},
+      { href: "https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Krona+One&display=swap", rel: "stylesheet"},
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
