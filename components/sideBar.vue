@@ -9,7 +9,7 @@
               <div class="mobile-links">
                   <ul>
                       <li @click="isActive = !isActive"><nuxt-link to="/">Projects</nuxt-link></li>
-                      <li @click="isActive = !isActive"><nuxt-link to="/about">About</nuxt-link></li>
+                      <!-- <li @click="isActive = !isActive"><nuxt-link to="/about">About</nuxt-link></li> -->
                       <li @click="isActive = !isActive"><nuxt-link to="/contact">Contact</nuxt-link></li>
                   </ul>
               </div>

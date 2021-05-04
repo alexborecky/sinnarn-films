@@ -9,8 +9,8 @@
                   :filmDescription="filmDescriptionOne"
                   :textPath="textPath"
                   textButtonTitle="Watch film"
-                  externalButtonTitle="Watch film"
-                  url="https://youtu.be/xLExJm6A13A"
+                  title="details"
+                  url="/origin"
                 />
             </div>
             <div class="section">

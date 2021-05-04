@@ -1,6 +1,6 @@
 <template>
     <div class="hero">
-        <div class="container flex-center" :style="{backgroundImage: 'url(' + filmThumbnail + ')'}">
+        <div class="contain flex-center" :style="{backgroundImage: 'url(' + filmThumbnail + ')'}">
             <div class="content flex-center">
                 <h1>{{filmName}}</h1>
                 <p>{{filmDescription}}</p>
@@ -51,8 +51,7 @@ export default {
             background-color: rgba(black, .9);
         }
     }
-    .container {
-        width: 100%;
+    .contain {
         height: 100vh;
         z-index: 100;
         background-size: cover;
@@ -92,13 +91,18 @@ export default {
         margin: 40px 0;
         @media only screen and (max-width: 600px) {
             font-size: 20px;
-            letter-spacing: 8px;
+            letter-spacing: 8px !important;
+            line-height: 32px;
         }
     }
     p {
         color: #FF5C00 !important;
         letter-spacing: 8px !important;
         font-weight: 400 !important;
+        @media only screen and (max-width: 600px) {
+            letter-spacing: 2px !important;
+            font-size: 10px;
+        }
     }
 }
 

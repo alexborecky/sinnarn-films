@@ -17,9 +17,9 @@
                     <p class="orange">{{filmDescription}}</p>
                     <h4 class="orange">28.01.21</h4>
                 <div class="links flex-center">
-                    <externalButton
+                    <PrimaryButton
                         :url="url"
-                        :externalButtonTitle="externalButtonTitle"
+                        :title="title"
                     />
                 </div>
                 </div>
@@ -33,7 +33,7 @@
 import awards from '@/assets/data/awards.js'
 export default {
     name: 'filmPremiere',
-    props: ['filmThumbnail', 'filmBackground', 'filmName', 'filmDescription', 'textPath', 'textButtonTitle', 'url', 'externalButtonTitle'],
+    props: ['filmThumbnail', 'filmBackground', 'filmName', 'filmDescription', 'textPath', 'textButtonTitle', 'url', 'title'],
     data () {
         return {
             button: 'External URL',
@@ -52,6 +52,8 @@ export default {
     text-align: center; 
     @media (max-width: 800px) {
         background-position: 20% center;
+        background-image: none !important;
+        background-color: #111447;
     }
 }
 
@@ -73,12 +75,14 @@ export default {
                 justify-content: center;
             }
             img {
-                max-width: calc(20% - 16px);
+                // max-width: calc(20% - 16px);
                 margin: 16px 16px 0 0;
-                height: 100%;
+                height: auto;
+                max-height: 80px;
+                width: auto;
                 @media only screen and (max-width: 760px) {
                     max-width: calc(25% - 8px);
-                    margin: 8px 8px 0 0;
+                    margin: 8px 4px 0 4px;
                 }
             }
         }

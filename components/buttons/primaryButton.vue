@@ -1,9 +1,10 @@
 <template>
-    <nuxt-link :to="primaryPath">
+    <nuxt-link :to="url">
         <div  class="primary-button">
             <p>
-                {{primaryButtonTitle}}
+                {{title}}
             </p>
+            <div class="underline"></div>
         </div>
     </nuxt-link>
 </template>
@@ -11,8 +12,8 @@
 
 <script>
 export default {
-    name: 'primaryButton',
-    props: ['primaryPath', 'primaryButtonTitle']
+    name: 'PrimaryButton',
+    props: ['url', 'title']
 }
 </script>
 
@@ -21,7 +22,26 @@ export default {
 
 .primary-button {
     background: none;
-    border: 2px solid white;
 }
+
+    .primary-button {
+        text-decoration: none;
+        .underline {
+            width: 100%;
+            height: 2px;
+            background-color: white;
+            transition: .4s ease;
+            position: relative;
+        }
+        p {
+          margin-bottom: 4px;
+          letter-spacing: 2px;
+        }
+        &:hover {
+            .underline {
+                width: 40%;
+            }
+        }
+    }
     
 </style>
