@@ -20,11 +20,11 @@
             return {
                 buttons: [
                     {
-                        url: 'https://youtube.com/',
+                        url: 'https://youtu.be/xLExJm6A13A',
                         icon: 'https://ik.imagekit.io/alexborecky/Films/youtube_ggtFekKDE.png'
                     },
                     {
-                        url: 'https://vimeo.com',
+                        url: 'https://vimeo.com/505660704',
                         icon: 'https://ik.imagekit.io/alexborecky/Films/vimeo4x_XkFD2EofPyu.png'
                     }
                 ]
