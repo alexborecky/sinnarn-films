@@ -31,9 +31,7 @@
 
 <script>
 import awards from '@/assets/data/awards.js'
-import primaryButton from './buttons/primaryButton.vue'
 export default {
-  components: { primaryButton },
     name: 'filmPremiere',
     props: ['filmThumbnail', 'filmBackground', 'filmName', 'filmDescription', 'url', 'title'],
     data () {

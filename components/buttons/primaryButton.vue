@@ -1,6 +1,6 @@
 <template>
     <nuxt-link :to="url">
-        <div  class="primary-button">
+        <div class="primary-button">
             <p>
                 {{title}}
             </p>
@@ -13,7 +13,7 @@
 
 <script>
 export default {
-    name: 'PrimaryButton',
+    name: 'primaryButton',
     props: ['url', 'title']
 }
 </script>
