@@ -5,6 +5,7 @@
                 {{title}}
             </p>
             <div class="underline"></div>
+            
         </div>
     </nuxt-link>
 </template>
