@@ -17,7 +17,7 @@
                     <p class="orange">{{filmDescription}}</p>
                     <h4 class="orange">28.01.21</h4>
                 <div class="links flex-center">
-                    <PrimaryButton
+                    <primary-button
                         :url="url"
                         :title="title"
                     />
@@ -31,7 +31,9 @@
 
 <script>
 import awards from '@/assets/data/awards.js'
+import primaryButton from './buttons/primaryButton.vue'
 export default {
+  components: { primaryButton },
     name: 'filmPremiere',
     props: ['filmThumbnail', 'filmBackground', 'filmName', 'filmDescription', 'textButtonTitle', 'url', 'title'],
     data () {
