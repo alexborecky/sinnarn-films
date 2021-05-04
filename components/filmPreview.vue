@@ -5,7 +5,7 @@
                 <h1>{{filmName}}</h1>
                 <p>{{filmDescription}}</p>
             </div>
-            <div class="links flex-center">
+            <!-- <div class="links flex-center">
                 <textButton id="temporary"
                     :textPath="textPath"
                     :textButtonTitle="textButtonTitle"
@@ -14,7 +14,7 @@
                     :url="url"
                     :externalButtonTitle="externalButtonTitle"
                 />
-            </div>
+            </div> -->
         </div>
     </div>
 </template>

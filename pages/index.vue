@@ -7,7 +7,6 @@
                   filmThumbnail="https://ik.imagekit.io/alexborecky/Films/empty_06Vxy1Y6H8Ve.jpg"
                   :filmName="filmNameOne"
                   :filmDescription="filmDescriptionOne"
-                  :textPath="textPath"
                   textButtonTitle="Watch film"
                   title="details"
                   url="/origin"
@@ -19,7 +18,6 @@
                     filmThumbnail=""
                     filmName="The Deportation of Miseries"
                     filmDescription="A film by Alexandr Borecky"
-                    textPath="textPath"
                     textButtonTitle="Pre-production"
                     externalButtonTitle="linkTitle"
                 />

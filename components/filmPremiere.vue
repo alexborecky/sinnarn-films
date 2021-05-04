@@ -33,7 +33,7 @@
 import awards from '@/assets/data/awards.js'
 export default {
     name: 'filmPremiere',
-    props: ['filmThumbnail', 'filmBackground', 'filmName', 'filmDescription', 'textPath', 'textButtonTitle', 'url', 'title'],
+    props: ['filmThumbnail', 'filmBackground', 'filmName', 'filmDescription', 'textButtonTitle', 'url', 'title'],
     data () {
         return {
             button: 'External URL',
