@@ -10,6 +10,9 @@
                     :icon="button.icon"
                 />
             </div>
+            <a class="medium" target="_blank" href="https://boreckyalex.medium.com/writing-directing-producing-and-staring-in-your-first-film-might-be-a-bit-too-much-472031be106a">
+                    <img src="https://ik.imagekit.io/alexborecky/Films/Vector_dK0CmsUTEyR.svg" alt="">
+                </a>
         </div>
     </div>
 </template>
@@ -26,7 +29,7 @@
                     {
                         url: 'https://vimeo.com/505660704',
                         icon: 'https://ik.imagekit.io/alexborecky/Films/vimeo4x_XkFD2EofPyu.png'
-                    }
+                    },
                 ]
             }
         }
@@ -93,6 +96,17 @@
             @media (max-width: 450px) {
                 flex-flow: column;
                 margin-top: 24px;
+            }
+        }
+        .medium {
+            img {
+                max-height: 16px;
+                margin-top: 40px;
+                opacity: .64;
+                transition: .3s ease-in-out;
+                &:hover {
+                    opacity: 1;
+                }
             }
         }
     }
